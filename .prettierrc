@@ -1,4 +1,5 @@
 {
+  "htmlWhitespaceSensitivity": "ignore",
   "jsonRecursiveSort": true,
   "overrides": [
     {
@@ -12,6 +13,7 @@
     "prettier-plugin-jsdoc",
     "prettier-plugin-sort-json",
     "prettier-plugin-svelte",
+    "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss"
   ],
   "printWidth": 80,
