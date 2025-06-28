@@ -1,7 +1,7 @@
 <script lang="ts">
   import Button from '$components/Button.svelte';
   import ButtonLink from '$components/ButtonLink.svelte';
-  import { loginWithGoogle } from '$lib/api';
+  import { loginWithGoogle } from '$lib/supabase';
   import FieldWithMountains from './FieldWithMountains.svelte';
   import Hill from './Hill.svelte';
   import Logo from './Logo.svelte';

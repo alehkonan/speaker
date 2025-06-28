@@ -5,12 +5,10 @@
   let { data }: PageProps = $props();
 </script>
 
-{#if data.categories}
+{#if data.words}
   <section class="grid grid-cols-4 gap-3 p-5">
-    {#each data.categories as category}
-      <a href={`/words?category=${category.id}`}>
-        <Card title={category.name_en} image={category.picture_url} />
-      </a>
+    {#each data.words as word}
+      <Card title={word.name_en} image={word.picture_url} />
     {/each}
   </section>
 {:else}

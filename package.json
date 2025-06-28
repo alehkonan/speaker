@@ -16,6 +16,7 @@
     "test": "npm run test:e2e"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
     "lucide-svelte": "^0.475.0"
   },
   "devDependencies": {
