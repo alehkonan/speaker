@@ -11,11 +11,11 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
-    "lint": "prettier --check . && eslint .",
+    "lint": "prettier --write . && eslint .",
     "test:e2e": "playwright test",
     "test": "npm run test:e2e",
     "preversion": "git pull && npm run check && npm run lint",
-    "version": "conventional-changelog -p conventionalcommits && git add CHANGELOG.md"
+    "version": "conventional-changelog -p conventionalcommits && prettier CHANGELOG.md --write && git add CHANGELOG.md"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
