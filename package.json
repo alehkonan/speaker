@@ -14,8 +14,7 @@
     "lint": "prettier --write . && eslint .",
     "test:e2e": "playwright test",
     "test": "npm run test:e2e",
-    "preversion": "git pull && npm run check && npm run lint",
-    "version": "conventional-changelog -p conventionalcommits && prettier CHANGELOG.md --write && git add CHANGELOG.md"
+    "release": "commit-and-tag-version"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.48.1",
@@ -30,8 +29,7 @@
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@tailwindcss/vite": "^4.0.4",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "conventional-changelog": "^7.1.0",
-    "conventional-changelog-conventionalcommits": "^9.0.0",
+    "commit-and-tag-version": "^12.5.1",
     "eslint": "^9.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-svelte": "^2.46.1",
