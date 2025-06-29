@@ -7,10 +7,14 @@ export const supabaseClient = createClient<Database>(
 );
 
 export async function getCategories() {
-  const { data } = await supabaseClient
+  const { data, error } = await supabaseClient
     .from('categories')
     .select()
     .order('name_en');
+
+  if (error) {
+    throw new Error(error.message);
+  }
 
   return data;
 }
